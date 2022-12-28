@@ -50,11 +50,11 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Python
-    url:               /example/
+    url:               /Python/
   - title:             Terminal
-    url:               /docs/
-  - title:             About
-    url:               /about/
+    url:               /Terminal/
+  - title:             Latex
+    url:               /Latex/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

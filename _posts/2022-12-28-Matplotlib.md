@@ -3,6 +3,7 @@ layout: post
 title:  "Basic Plotting"
 date:   2022-12-27 13:13:54 +0900
 categories: example
+permalink: /Python/
 ---
 # Basic Plotting
 

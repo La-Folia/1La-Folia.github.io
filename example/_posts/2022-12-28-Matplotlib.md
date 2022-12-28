@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Example Matplotlib
+title: Introducing Hydejack 9
+image: 
+  path: /assets/img/blog/Matplotlib_files/Matplotlib_14_0.png
 description: >
-  How using Matplotlib
+  Version 9 is the most complete version of Hydejack yet.
+  Modernized design, big headlines, and big new features.
 sitemap: false
-hide_last_modified: true
 ---
 # Basic Plotting
 

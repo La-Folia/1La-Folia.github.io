@@ -242,7 +242,7 @@ y = 13 * np.cos(t) - 5 * np.cos (2 * t) - 2 * np.cos(3 * t) - np.cos(4 * t)
 
 plt.plot(x, y, c = (1, 0.2, 0.5), lw = 5)
 
-plt.title('Heart!')
+plt.title('Jaehee')
 plt.axis('equal')
 plt.axis('off')
 

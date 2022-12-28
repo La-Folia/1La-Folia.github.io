@@ -20,7 +20,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_2_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_2_0.png)
     
 
 
@@ -34,7 +34,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_3_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_3_0.png)
     
 
 
@@ -59,7 +59,7 @@ plt.legend()
 
 
     
-![png](Matplotlib_files/Matplotlib_5_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_5_0.png)
     
 
 
@@ -81,7 +81,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_8_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_8_0.png)
     
 
 
@@ -93,7 +93,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_9_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_9_0.png)
     
 
 
@@ -132,7 +132,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_11_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_11_0.png)
     
 
 
@@ -152,7 +152,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_12_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_12_0.png)
     
 
 
@@ -174,7 +174,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_13_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_13_0.png)
     
 
 
@@ -207,7 +207,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_14_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_14_0.png)
     
 
 
@@ -250,7 +250,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_16_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_16_0.png)
     
 
 
@@ -293,7 +293,7 @@ plt.title("function 4")
 
 
     
-![png](Matplotlib_files/Matplotlib_17_1.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_17_1.png)
     
 
 
@@ -386,7 +386,7 @@ plt.show()
 
 
     
-![png](Matplotlib_files/Matplotlib_19_0.png)
+![png](/assets/img/blog/Matplotlib_files/Matplotlib_19_0.png)
     
 
 

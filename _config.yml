@@ -49,12 +49,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Python
-    url:               /Python/
+  - title:             Python_matplotlib
+    url:               /Python_matplotlib/
   - title:             Terminal
     url:               /Terminal/
-  - title:             Latex
-    url:               /Latex/
+  - title:             Essay
+    url:               /Essay/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

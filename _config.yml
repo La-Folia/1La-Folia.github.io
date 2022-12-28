@@ -50,7 +50,7 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Python
-    url:               /example/
+    url:               /Python/
   - title:             Terminal
     url:               /Terminal/
   - title:             About

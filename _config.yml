@@ -44,7 +44,8 @@ author:
   name:                <La> <Folia>
   email:               <kang0481@naver.com.tld>
   # # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
+  #twitter:             <username>
+  instagram: <La_Folia>
 
 # Add links to the sidebar.
 menu:

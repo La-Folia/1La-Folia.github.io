@@ -2,7 +2,7 @@
 layout: post
 title:  "Practice Markdown"
 date:   2022-12-27 13:13:54 +0900
-categories: example
+categories: Python
 permalink: /Python/
 ---
 # Practice

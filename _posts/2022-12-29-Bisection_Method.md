@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Bisection_Method"
+title:  "Python_Bisection_Method"
 date:   2022-12-29 17:44:54 +0900
-categories: Bisection_Method
+categories: Python_Bisection_Method
 permalink: /Python_Bisection_Method/
 ---
 # Root Finding

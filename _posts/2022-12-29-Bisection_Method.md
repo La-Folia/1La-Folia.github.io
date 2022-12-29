@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Python_Bisection_Method"
-date:   2022-12-29 17:44:54 +0900
+title:  "Bisection_Method"
+date:   2022-12-27 13:13:54 +0900
 categories: Python_Bisection_Method
 permalink: /Python_Bisection_Method/
 ---
@@ -283,22 +283,33 @@ def bisection_while(f, xinit, predicate):
     x_mid = 0.5 * (a_n + b_n)
     f_mid = f(x_mid)
     
+    #cuberoot2_approx = bisection_while(lambda x: x*x*x - 2, (1, 2), 
+    #                             lambda i, xy, dx: abs(dx) > 1e-10)
+    #lambda는 익명함수라고 이해하면 된다.
+    
     #반복
-    #----------------------------???????????????????----------------------
+
     while predicate(i, (x_mid, f_mid), 0.5 * abs(a_n - b_n)):
-        if f_1st * f_mid > 0:
+        #만약 abs(dx) 값이 적절한 숫자 정도보다 작아질때 까지, 시작하라는 뜻
+        #즉 dx 값이 e-10 보다 크면 계속하고, 작으면 멈추는 시스템.
+        if f_1st * f_mid > 0: 
+            #앞서 이 상황은 a_n과 b_n사이에 0값이 끼어있어야함. (유호체크를 통과했으니)
+            #그리고 이 상황을 만족하는 경우는, 즉 a_n보다 해가 +방향에 있기에 
+            #a_n을 mid로 잡고 +방향으로 1/2씩 좁혀가는 것.
             a_n = x_mid
             f_1st = f_mid
-            
-    ##???? 도저히 이해가 안됨???
-    #----------------------------???????????????????----------------------
-            
+
         else:
-            b_n = x_mid
+            b_n = x_mid 
+            #b_n이 당겨짐 -방향으로
+            #이때 f_1st는 안변해도 됨 
+            #1. f_1st * f_mid 이 0보다 커지면, a_n이 움직이니 상관없고
+            #2. f_1st * f_mid 이 여전히 같거나 작으면, b_n이 더 당겨지면 되기에
             
         i = i + 1
         x_mid = 0.5 * (a_n + b_n)
         f_mid = f(x_mid)
+        #즉 a_n 과 b_n 간격을 계속해서 줄이주면서, x_mid를 적절하게 옮겨준다.
  
     return x_mid
     
@@ -317,7 +328,7 @@ $$
 
 ```python
 cuberoot2_approx = bisection_while(lambda x: x*x*x - 2, (1, 2), 
-                                   lambda i, xy, dx: abs(dx) > 1e-10)
+                                   lambda i, asdf, dx: abs(dx) > 1e-10)
 (cuberoot2_approx, abs(2**(1/3) - cuberoot2_approx))
 ```
 
@@ -327,6 +338,8 @@ cuberoot2_approx = bisection_while(lambda x: x*x*x - 2, (1, 2),
     (1.2599210498738103, 2.1062929178583545e-11)
 
 
+
+##### asdf 자리에 뭘 넣어도 상관없는데, 저 자리의 의미는?? --> x,y의 값을 나타내는 (x,y) 튜플의 변수를 나타낸 것
 
 # 황금 비율
 
@@ -376,19 +389,128 @@ iy_pairs = []
 idx_pairs = []
 
 def intercept(i, xy, dx):
-    ix_pairs.append([i, xy[0]])
-    iy_pairs.append([i, abs(xy[1])])
-    idx_pairs.append([i, abs(dx)])
-    return i <= 11
+    ix_pairs.append([i, xy[0]]) #i를 한번 돌렸을때 x의 값.
+    iy_pairs.append([i, abs(xy[1])]) #i를 한번 돌렸을때 y의 값.
+    idx_pairs.append([i, abs(dx)]) #i번 돌렸을때, 앱실론, 간격
+    print(i, xy, dx) 
+    return i <= 10
+    #while구문을 끝낼 제한 조건에 해당함, return은 제한을 나타내면서
+    #return이 될때 동안, i는 위의 def구문에 의해 i +1씩 더해지고 i = 11이 되면
+    #intercept에서 false를 출력하면서 while 구문에도 false가 됨에 따라
+    #bisection_while 구문도 멈추게 된다.
 
 bisection_while(lambda x: x*(x - 1) - 1, (1, 2), intercept )
+```
+
+    1 (1.5, -0.25) 0.5
+    2 (1.75, 0.3125) 0.25
+    3 (1.625, 0.015625) 0.125
+    4 (1.5625, -0.12109375) 0.0625
+    5 (1.59375, -0.0537109375) 0.03125
+    6 (1.609375, -0.019287109375) 0.015625
+    7 (1.6171875, -0.00189208984375) 0.0078125
+    8 (1.62109375, 0.0068511962890625) 0.00390625
+    9 (1.619140625, 0.002475738525390625) 0.001953125
+    10 (1.6181640625, 0.00029087066650390625) 0.0009765625
+    11 (1.61767578125, -0.0008008480072021484) 0.00048828125
+
+
+
+
+
+    1.61767578125
+
+
+
+
+```python
+ix_pairs
 ```
 
 
 
 
-    1.617919921875
+    [[1, 1.5],
+     [2, 1.75],
+     [3, 1.625],
+     [4, 1.5625],
+     [5, 1.59375],
+     [6, 1.609375],
+     [7, 1.6171875],
+     [8, 1.62109375],
+     [9, 1.619140625],
+     [10, 1.6181640625],
+     [11, 1.61767578125]]
 
+
+
+
+```python
+print(*ix_pairs)
+```
+
+    [1, 1.5] [2, 1.75] [3, 1.625] [4, 1.5625] [5, 1.59375] [6, 1.609375] [7, 1.6171875] [8, 1.62109375] [9, 1.619140625] [10, 1.6181640625] [11, 1.61767578125]
+
+
+
+```python
+print(zip(*ix_pairs))
+```
+
+    <zip object at 0x7fefd9542340>
+
+
+
+```python
+print(*zip(*ix_pairs)) #x,y plot에 놓을 수 있게 튜플로 각각 묶어준다.
+
+```
+
+    (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) (1.5, 1.75, 1.625, 1.5625, 1.59375, 1.609375, 1.6171875, 1.62109375, 1.619140625, 1.6181640625, 1.61767578125)
+
+
+## zip과 *zip 의 이해
+
+
+```python
+numbers = [[1,1.50001], [4,1.801] ,[8,1.91]]
+letters = ['a', 'b', 'c', 'd']
+upper_letters = ['A', 'B', 'C', 'D', 'E']
+ 
+zipped = zip(numbers, letters, upper_letters) 
+zipped = list(zipped)
+print(zipped) #단순히 zip은 함수를 튜플로 묶어준다. 압축해준다고 생각
+
+```
+
+    [([1, 1.50001], 'a', 'A'), ([4, 1.801], 'b', 'B'), ([8, 1.91], 'c', 'C')]
+
+
+
+```python
+print(*zip(numbers,letters)) #numbers과 letters를 튜플로 묶어준다.
+#이때 위와 다르게 하나의 꼴로 압축된 것을 볼 수 있다.
+
+print(zip(*numbers)) #각각의 좌표를 (a)(b)꼴로 묶어준다.
+print("-" * 10)
+#튜플로 하나로 묶여있지만, 각각의 인수로 빠져나올 수 있다.
+for i in zip(*numbers):
+    print(i)
+```
+
+    ([1, 1.50001], 'a') ([4, 1.801], 'b') ([8, 1.91], 'c')
+    <zip object at 0x7fefd95b29c0>
+    ----------
+    (1, 4, 8)
+    (1.50001, 1.801, 1.91)
+
+
+
+```python
+print(*zip(*numbers))
+```
+
+    (1, 4, 8) (1.50001, 1.801, 1.91)
 
 
 
@@ -396,19 +518,28 @@ bisection_while(lambda x: x*(x - 1) - 1, (1, 2), intercept )
 plt.figure(figsize=(11, 4))
 
 plt.subplot(1, 3, 1)
-plt.plot(*zip(*ix_pairs), 'o:k', label="bisection")
+plt.plot(*zip(*ix_pairs), 'o:k', label="bisection") 
+#ix_pairs를 plot하기 쉽게 *zip(*행렬) 꼴을 이용한다.
+
 plt.plot([1, len(ix_pairs)], (1 + 5 ** 0.5) / 2 * np.ones((2,)), '--r',
          label="solution")
+#ix_pairs의 길이 만큼, 실제 솔루션이 어느정도 되는지를 보여주는 점선.
 plt.title("$x$ approximation")
 plt.xlabel("iteration count")
 plt.ylim([1, 2])
 plt.legend()
+
+
 
 plt.subplot(1, 3, 2)
 plt.semilogy(*zip(*iy_pairs), 'o:k')
 plt.title("$|f(x_n)|$")
 plt.xlabel("iteration count")
 plt.grid()
+#이 값은 결국 해를 찾는 거니 0에 수렵해야 함을 볼 수 있고
+#이 때 한 칸씩 잠시 올라가는 이유는, 절반 자르는 과정에서 함수 값이 늘 수도, 줄어들 수도 있음
+#이는 반 잘랐을때, 그 값의 f(x)이기에 함수에 따라 규칙적이게 잠시 늘었다가, 줄어든다.
+#점진적으로는 계속 줄어들겠지, 원하는 0값이 되니까.
 
 plt.subplot(1, 3, 3)
 plt.semilogy(*zip(*idx_pairs), 'o:k', label="$\Delta x_n$")
@@ -418,17 +549,130 @@ plt.xlabel("iteration count")
 plt.title("|$\Delta x$|")
 plt.grid()
 plt.legend()
+#이 값은 앱실론, 값이 작을때 까지 우리가 선정하는 것.
 
 plt.tight_layout()
-plt.show()
+plt.savefig("bisection.jpg")
 ```
 
 
     
-![png](B![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_33_0.png)    
+![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_42_0.png)
+    
 
 
 
 ```python
+print([1, len(ix_pairs)])
+print((1 + 5 ** 0.5) / 2 * np.ones((2,)))
+np.ones((2,))
+```
+
+    [1, 11]
+    [1.61803399 1.61803399]
+
+
+
+
+
+    array([1., 1.])
+
+
+
+### 베셀 함수의 해를 찾아보자
+
+$J_0(x) = 0$.
+먼저 솔루션의 간격을 알아야 한다.
+
+
+
+```python
+from scipy import special
+
+x = np.linspace(0, 30, 200)
+y = special.jn(0, x)
+
+plt.figure()
+plt.plot(x, y, '-r', label = "$J_0(x)$")
+plt.xlabel("$x$")
+plt.ylabel("$J_0(x)$")
+plt.grid()
+plt.savefig("Bessel_sol.jpg")
+
 
 ```
+
+
+    
+![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_45_0.png)
+    
+
+
+위의 그림에서 첫 번째 해는 [0,5] 두번째는 ...이렇게 이분법으로 구현해보자
+
+
+```python
+intervals = (0, 5, 7, 10, 13, 16, 20, 23, 25, 28)
+x_zeros = [
+    bisection_while(lambda x: special.jn(0, x), ab,
+                    lambda i, xy, dx: abs(xy[1]) >= 1e-10)
+    for ab in zip(intervals[:-1], intervals[1:])
+]
+
+plt.figure()
+plt.plot(x, y, '-r')
+plt.plot(x_zeros,np.zeros_like(x_zeros), 'ok',
+         label="$J_0=0$ points")
+plt.xlabel("$x$")
+plt.ylabel("$J_0(x)$")
+plt.grid()
+plt.legend()
+plt.savefig("Bessel_sol2.jpg")
+```
+
+
+    
+![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_47_0.png)
+    
+
+
+해가 정확한 값에 얼마나 가까운지 비교해보자
+
+
+```python
+abs_err = [abs(x - y) for x, y in zip(x_zeros, special.jn_zeros(0, len(x_zeros)))]
+abs_err
+#여기서 x는 zip에서 x_zeors(우리가 구한 해)
+#y는 special.jn_zeros(0, 길이만큼) 실제 해를 구한 것.
+```
+
+
+
+
+    [9.040945769811515e-11,
+     2.2231017027252165e-10,
+     1.3151790767551574e-10,
+     2.849951385996974e-10,
+     1.8107115806742513e-10,
+     4.892726224170474e-10,
+     4.579945311888878e-10,
+     3.1183233772935637e-10,
+     6.120259854469623e-10]
+
+
+
+
+```python
+print(x_zeros)
+```
+
+    [2.4048255576053634, 5.520078110508621, 8.65372791304253, 11.791534438729286, 14.930917708668858, 18.07106396742165, 21.211636629421264, 24.35247153043747, 27.493479132652283]
+
+
+
+```python
+print(special.jn_zeros(0, 1))
+```
+
+    [2.40482556]
+

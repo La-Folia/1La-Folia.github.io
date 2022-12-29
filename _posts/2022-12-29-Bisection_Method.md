@@ -5,7 +5,7 @@ date:   2022-12-27 13:13:54 +0900
 categories: Python_Bisection_Method
 permalink: /Python_Bisection_Method/
 ---
-# Root Finding
+# Root_Finding
 
 ### Bisection_Method
 

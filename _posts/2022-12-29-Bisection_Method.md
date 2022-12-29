@@ -5,7 +5,7 @@ date:   2022-12-27 13:13:54 +0900
 categories: Python_Bisection_Method
 permalink: /Python_Bisection_Method/
 ---
-# Root_Finding
+# Root Finding
 
 ### Bisection_Method
 
@@ -259,7 +259,7 @@ for _ in range(n):
 def bisection_while(f, xinit, predicate):
     a_n, b_n = xinit 
     f_1st = f(a_n)
-    
+
     #f: 해를 추정하고자 하는 방정식
     #xinit :interval, 간격, 즉 함수에서 [a, b]를 뜻함, 여기선 튜플로 들어감.
     #predicate : 호출 가능, 세 가지 인수를 사용하는 함수를 의미.
@@ -552,12 +552,19 @@ plt.legend()
 #이 값은 앱실론, 값이 작을때 까지 우리가 선정하는 것.
 
 plt.tight_layout()
-plt.savefig("bisection.jpg")
+plt.show
 ```
 
 
+
+
+    <function matplotlib.pyplot.show(close=None, block=None)>
+
+
+
+
     
-![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_42_0.png)
+![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_42_1.png)
     
 
 
@@ -597,14 +604,21 @@ plt.plot(x, y, '-r', label = "$J_0(x)$")
 plt.xlabel("$x$")
 plt.ylabel("$J_0(x)$")
 plt.grid()
-plt.savefig("Bessel_sol.jpg")
+plt.show
 
 
 ```
 
 
+
+
+    <function matplotlib.pyplot.show(close=None, block=None)>
+
+
+
+
     
-![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_45_0.png)
+![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_45_1.png)
     
 
 
@@ -627,12 +641,19 @@ plt.xlabel("$x$")
 plt.ylabel("$J_0(x)$")
 plt.grid()
 plt.legend()
-plt.savefig("Bessel_sol2.jpg")
+plt.show
 ```
 
 
+
+
+    <function matplotlib.pyplot.show(close=None, block=None)>
+
+
+
+
     
-![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_47_0.png)
+![png](/assets/img/blog/Bisection_Method_files/Bisection_Method_47_1.png)
     
 
 

@@ -260,7 +260,7 @@ plt.show()
 
 
     
-![png](/assets/img/blog/Secant%20Method_files/Secant%20Method_25_0.png)
+![png](/assets/img/blog/Secant\ Method_files/Secant\ Method_25_0.png)
     
 
 
@@ -363,7 +363,7 @@ plt.show()
 
 
     
-![png](/assets/img/blog/Secant%20Method_files/Secant%20Method_32_0.png)
+![png](/assets/img/blog/Secant\ Method_files/Secant\ Method_32_0.png)
     
 
 
@@ -377,7 +377,7 @@ secant_while(lambda x: x ** 3 - x ** 2 - 1, (2, 2.5),
 
     2 (1.5987836638489181, 0.5305564342434193) -0.12214656870922136
     4 (1.491587364251626, 0.09369972410165861) -0.10719629959729216
-    6 (1.4685952401436417, 0.010653083609162728) -0.022992124107984235
+  6 (1.4685952401436417, 0.010653083609162728) -0.022992124107984235
     8 (1.465645849066266, 0.00026211586782887153) -0.002949391077375685
     10 (1.4655714496242644, 7.648501409995845e-07) -7.439944200160475e-05
     12 (1.465571231892479, 5.518518975122788e-11) -2.1773178549011618e-07
@@ -435,7 +435,7 @@ plt.show()
 
 
     
-![png](/assets/img/blog/Secant%20Method_files/Secant%20Method_43_0.png)
+![png](/assets/img/blog/Secant\ Method_files/Secant\ Method_43_0.png)
     
 
 
@@ -488,6 +488,6 @@ plt.show()
 
 
     
-![png](/assets/img/blog/Secant%20Method_files/Secant%20Method_47_0.png)
+![png](/assets/img/blog/Secant\ Method_files/Secant\ Method_47_0.png)
     
 

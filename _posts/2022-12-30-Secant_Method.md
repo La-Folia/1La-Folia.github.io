@@ -260,7 +260,7 @@ plt.show()
 
 
     
-![png](/assets/img/blog/Secant\ Method_files/Secant\ Method_25_0.png)
+![png](/assets/img/blog/Secant_Method_files/Secant_Method_25_0.png)
     
 
 
@@ -363,7 +363,7 @@ plt.show()
 
 
     
-![png](/assets/img/blog/Secant\ Method_files/Secant\ Method_32_0.png)
+![png](/assets/img/blog/Secant_Method_files/Secant_Method_32_0.png)
     
 
 
@@ -435,7 +435,7 @@ plt.show()
 
 
     
-![png](/assets/img/blog/Secant\ Method_files/Secant\ Method_43_0.png)
+![png](/assets/img/blog/Secant_Method_files/Secant_Method_43_0.png)
     
 
 
@@ -488,6 +488,6 @@ plt.show()
 
 
     
-![png](/assets/img/blog/Secant\ Method_files/Secant\ Method_47_0.png)
+![png](/assets/img/blog/Secant_Method_files/Secant_Method_47_0.png)
     
 

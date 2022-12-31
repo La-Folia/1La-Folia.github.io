@@ -53,6 +53,8 @@ menu:
     url:               /Python_matplotlib/
   - title:             Python_Bisection_Method
     url:               /Python_Bisection_Method/
+  - title:             Python_Secant_Method
+    url:               /Python_Secant_Method/
   - title:             Terminal
     url:               /Terminal/
   - title:             Essay

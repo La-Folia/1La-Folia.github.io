@@ -55,6 +55,8 @@ menu:
     url:               /Python_Bisection_Method/
   - title:             Python_Secant_Method
     url:               /Python_Secant_Method/
+  - title:             Python_Mullers_Method
+    url:               /Python_Mullers_Method/
   - title:             Terminal
     url:               /Terminal/
   - title:             Essay

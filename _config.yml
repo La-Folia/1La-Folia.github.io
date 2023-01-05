@@ -61,6 +61,8 @@ menu:
     url:               /Terminal/
   - title:             Essay
     url:               /Essay/
+  - title:             Python_Newtons_Method
+    url:               /Python_Newtons_Method/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

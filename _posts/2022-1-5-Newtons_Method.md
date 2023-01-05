@@ -2510,7 +2510,7 @@ plt.show()
 
 
     
-![png](assets/img/blog/Newtons_Method_files/Newtons_Method_20_0.png)
+![png](/assets/img/blog/Newtons_Method_files/Newtons_Method_20_0.png)
     
 
 
@@ -2570,7 +2570,7 @@ plt.show()
 
 
     
-![png](assets/img/blog/Newtons_Method_files/Newtons_Method_24_0.png)
+![png](/assets/img/blog/Newtons_Method_files/Newtons_Method_24_0.png)
     
 
 
@@ -2644,7 +2644,7 @@ plt.show()
 
 
     
-![png](assets/img/blog/Newtons_Method_files/Newtons_Method_35_0.png)
+![png](/assets/img/blog/Newtons_Method_files/Newtons_Method_35_0.png)
     
 
 

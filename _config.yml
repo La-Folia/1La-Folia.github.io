@@ -59,7 +59,8 @@ menu:
     url:               /Python_Mullers_Method/
   - title:             Python_Newtons_Method
     url:               /Python_Newtons_Method/
-
+  - title:             The_Law_of_the_Lost_Eraser
+    url:               /The_Law_of_the_Lost_Eraser/
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:

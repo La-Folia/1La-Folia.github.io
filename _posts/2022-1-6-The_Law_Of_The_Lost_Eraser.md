@@ -1,4 +1,10 @@
-
+---
+layout: post
+title:  "Basic Plotting"
+date:   2022-12-27 13:13:54 +0900
+categories: The_Law_of_the_Lost_Eraser
+permalink: /The_Law_of_the_Lost_Eraser/
+---
 아이러니 하다.   
 
 세상은 정말로 아이러니하다.   

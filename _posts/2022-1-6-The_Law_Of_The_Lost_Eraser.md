@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Basic Plotting"
+title:  "The_Law_of_the_Lost_Eraser"
 date:   2022-12-27 13:13:54 +0900
 categories: The_Law_of_the_Lost_Eraser
 permalink: /The_Law_of_the_Lost_Eraser/

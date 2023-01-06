@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Basic Plotting"
+title:  "Newtons_Method"
 date:   2022-12-27 13:13:54 +0900
 categories: Python_Newtons_Method
 permalink: /Python_Newtons_Method/

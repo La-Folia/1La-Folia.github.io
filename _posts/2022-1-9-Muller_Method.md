@@ -88,24 +88,24 @@ where the sign in the denominator is chosen such that $\left|B \pm \sqrt{B^2 - 4
 
 ## Algorithm
 
-1. Starting from the three initial values ${x_0, x_1, x_2}$, find the next approximation $x_3$ according to Muller's formula:
+Starting from the three initial values ${x_0, x_1, x_2}$, find the next approximation $x_3$ according to Muller's formula:
 
-    $$
+$$
     x_3 = x_2 - \frac{2C_2}{B_2 \pm \sqrt{B_2^2 - 4A_2C_2}}
-    $$
+$$
     
-2. We then use this new value $x_3$ and repeat the process, using ${x_3, x_2, x_1}$ as the initial values, solving for $x_4$, $x_5$, etc.:
+We then use this new value $x_3$ and repeat the process, using ${x_3, x_2, x_1}$ as the initial values, solving for $x_4$, $x_5$, etc.:
 
-    $$
+$$
     \begin{aligned}
     x_4 &= x_3 - \frac{2C_3}{B_3 \pm \sqrt{B_3^2 - 4A_3C_3}}, \\
     x_5 &= x_4 - \frac{2C_4}{B_4 \pm \sqrt{B_4^2 - 4A_4C_4}}, \\
     &\ \vdots \\
     x_n &= x_{n - 1} - \frac{2C_{n - 1}}{B_{n - 1} \pm \sqrt{B_{n - 1}^2 - 4A_{n - 1}C_{n - 1}}}, \\
     \end{aligned}
-    $$
+$$
     
-3. The iteration stops when we reach a sufficiently high level of precision (a sufficiently small difference between $x_n$ and $x_{n - 1}$).
+The iteration stops when we reach a sufficiently high level of precision (a sufficiently small difference between $x_n$ and $x_{n - 1}$).
 
 *Note* that $x_n$ can be complex.
 

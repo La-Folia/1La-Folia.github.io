@@ -40,7 +40,7 @@ a$x^2$ + b$x$ + c = $y$
 Muller's Formula
 
 <center><figure>
-  <img src="https://media.geeksforgeeks.org/wp-content/uploads/Muller-Method.png" width="400">
+  <img src=https://media.geeksforgeeks.org/wp-content/uploads/Muller-Method.png>
   <figcaption>Image from https://www.geeksforgeeks.org/program-muller-method/</figcaption>
 </figure></center>
 

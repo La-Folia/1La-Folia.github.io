@@ -8,7 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-   Minwook Kang, Bachelor of Science in Astronomy & Space Science[Daejeon, Korea]  
+   Minwook Kang, Bachelor of Science in Astronomy & Space Science 
   # This photo will be used in the about section
   picture:
     path:            /assets/img/blog/IMG_0195.JPG

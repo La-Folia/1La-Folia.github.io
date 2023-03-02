@@ -20,8 +20,8 @@ author1:
   # Comment/uncommet to show/hide
 #sdearrange to change the order in which they appear
   social:
-    github:          <La-Folia>
-    email:           <kang0481@naver.com.tld>
+    github:          La-Folia
+    email:           <kang0481@naver.com>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -32,7 +32,7 @@ author1:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    instagram:       <La__folia>
+    instagram:       La__folia
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>

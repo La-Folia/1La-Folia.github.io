@@ -63,6 +63,8 @@ menu:
     url:               /The_Law_of_the_Lost_Eraser/
   - title:             Sample
     url:               /Sample/
+  - title:             Study_Group
+    url:               /Study_Group/
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:

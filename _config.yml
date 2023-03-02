@@ -49,20 +49,6 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Python_matplotlib
-    url:               /Python_matplotlib/
-  - title:             Python_Bisection_Method
-    url:               /Python_Bisection_Method/
-  - title:             Python_Secant_Method
-    url:               /Python_Secant_Method/
-  - title:             Python_Mullers_Method
-    url:               /Python_Mullers_Method/
-  - title:             Python_Newtons_Method
-    url:               /Python_Newtons_Method/
-  - title:             The_Law_of_the_Lost_Eraser
-    url:               /The_Law_of_the_Lost_Eraser/
-  - title:             Sample
-    url:               /Sample/
   - title:             Study_Group
     url:               /Study_Group/
 # Add links to the footer.

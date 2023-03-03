@@ -2,13 +2,13 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <Minwook> <Kang>
+  name:              <Folia> <La>
   email:             <kang0481@naver.com>
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-   Minwook Kang, Bachelor of Science in Astronomy & Space Science 
+   Bachelor of Science in Astronomy & Space Science, and the owner of the white fox 
   # This photo will be used in the about section
   picture:
     path:            /assets/img/blog/IMG_0195.JPG

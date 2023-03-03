@@ -21,7 +21,7 @@ sitemap: false
 
 공지, 일정 그리고 **이 그룹의 목적**에 대한 **PDF** 입니다.  
 우리 그룹에 대한 간단한 소개이니, 꼭 읽어보시길 당부드립니다. 
->[Study Group Rule.pdf](https://drive.google.com/file/d/1EG7sDEzQiKPBfo6sS8HPyuA1ui3mCtmC/view?usp=share_link)
+>[Study Group Rule.pdf](https://drive.google.com/file/d/1EG7sDEzQiKPBfo6sS8HPyuA1ui3mCtmC/view?usp=sharing)
 
 추가로 궁금한 사항이나 문의를 위해 아래의 연락처를 알려드립니다.
 - Email: kang0481@naver.com

@@ -4,7 +4,12 @@ title:  "INVITATION"
 date:   2023-3-2 13:13:54 +0900
 categories: Study_Group
 permalink: /Study_Group/
-image: /assets/img/blog/Night.png
+image: 
+  path: /assets/img/blog/Night.png
+  srcset:
+    1060w: /assets/img/blog/Night.png
+    530w:  /assets/img/blog/Night.png
+    265w:  /assets/img/blog/Night.png
 ---
 우선 초대장을 받은 것에 대해 진심으로 축하드립니다.
 이 초대장은 오직 선택받은 9명에게만 주어집니다. 

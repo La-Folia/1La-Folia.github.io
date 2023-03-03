@@ -80,4 +80,4 @@ sitemap: false
 >좋은 기회를 만나지 못했던 사람은 하나도 없다.  
 >그것을 포착하지 못했을 뿐이다.  
 >  
->  - Dale Harbison Carnagey
+>  Dale Harbison Carnagey
